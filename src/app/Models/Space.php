@@ -22,7 +22,7 @@ class Space extends Model
     protected $primaryKey = 'id';
     public $timestamps = true;
     // protected $guarded = ['id'];
-    protected $fillable = ['title', 'slug'];
+    protected $fillable = ['title', 'slug', 'icon', 'description'];
     // protected $hidden = [];
     // protected $dates = [];
 

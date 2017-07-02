@@ -30,12 +30,21 @@ class SpaceCrudController extends CrudController
 
         // ------ CRUD COLUMNS
         $this->crud->addColumn([
+                                'name' => 'icon',
+                                'label' => 'Icon',
+                                'type' => 'icon-fontawesome'
+                            ]);
+        $this->crud->addColumn([
                                 'name' => 'title',
                                 'label' => 'Title',
                             ]);
         $this->crud->addColumn([
                                 'name' => 'slug',
                                 'label' => 'Slug',
+                            ]);
+        $this->crud->addColumn([
+                                'name' => 'description',
+                                'label' => 'Description',
                             ]);
 
         // ------ CRUD FIELDS
@@ -50,6 +59,17 @@ class SpaceCrudController extends CrudController
                                 'label' => 'Slug (URL)',
                                 'type' => 'text',
                                 'hint' => 'Will be automatically generated from your title, if left empty.',
+                            ]);
+        $this->crud->addField([    // TEXT
+                                'name' => 'icon',
+                                'label' => 'Icon',
+                                'type' => 'icon_picker',
+                                'iconset' => 'fontawesome',
+                            ]);
+        $this->crud->addField([
+                                'name' => 'description',
+                                'label' => 'Description',
+                                'type' => 'text',
                             ]);
 
         $this->crud->enableAjaxTable();
