@@ -64,7 +64,7 @@ class Article extends Model
 
     public function space()
     {
-        return $this->belongsTo('Abby\Knowledgebase\app\Models\Article');
+        return $this->belongsTo('Abby\Knowledgebase\app\Models\Space');
     }
 
     /*
