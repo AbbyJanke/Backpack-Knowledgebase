@@ -73,6 +73,30 @@ class Article extends Model
     |--------------------------------------------------------------------------
     */
 
+    /**
+     * Check if public
+     *
+     * @param  \Illuminate\Database\Eloquent\Builder  $builder
+     * @param  \Illuminate\Database\Eloquent\Model  $model
+     * @return void
+     */
+    public function public(Builder $builder, Model $model)
+    {
+        $builder->where('private', false);
+    }
+
+    /**
+     * Check if private
+     *
+     * @param  \Illuminate\Database\Eloquent\Builder  $builder
+     * @param  \Illuminate\Database\Eloquent\Model  $model
+     * @return void
+     */
+    public function private(Builder $builder, Model $model)
+    {
+        $builder->where('private', true);
+    }
+
     /*
     |--------------------------------------------------------------------------
     | ACCESORS
