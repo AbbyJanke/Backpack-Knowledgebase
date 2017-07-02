@@ -1,12 +1,12 @@
 {
     "name": "abby/backpack-knowledgebase",
     "type": "library",
-    "description": "An admin panel for knowledgebase, using Backpack\\CRUD on Laravel 5.",
+    "description": "An admin panel for a knowledgebase, using Backpack\\CRUD on Laravel 5.",
     "keywords": [
         "backpack",
-        "MenuCRUD"
+        "knowledgebase"
     ],
-    "homepage": "https://github.com/backpack/MenuCRUD",
+    "homepage": "https://github.com/AbbyJanke/Backpack-Knowledgebase",
     "license": "MIT",
     "authors": [
         {
