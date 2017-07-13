@@ -39,8 +39,8 @@ php artisan migrate
   <li class="treeview">
     <a href="#"><i class="fa fa-book"></i> <span>Knowledgebase</span> <i class="fa fa-angle-left pull-right"></i></a>
     <ul class="treeview-menu">
-      <li><a href="{{ url(config('backpack.base.route_prefix', 'admin') . '/knowledgebase/spaces') }}"><i class="fa fa-folder"></i> <span>Spaces</span></a></li>
-      <li><a href="{{ url(config('backpack.base.route_prefix', 'admin') . '/knowledgebase/articles') }}"><i class="fa fa-file-text"></i> <span>Articles</span></a></li>
+      <li><a href="{{ url(config('backpack.base.route_prefix', 'admin') . '/knowledgebase/space') }}"><i class="fa fa-folder"></i> <span>Spaces</span></a></li>
+      <li><a href="{{ url(config('backpack.base.route_prefix', 'admin') . '/knowledgebase/article') }}"><i class="fa fa-file-text"></i> <span>Articles</span></a></li>
     </ul>
   </li>
 ```
